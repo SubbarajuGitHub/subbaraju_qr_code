@@ -1,10 +1,11 @@
-
 import React from "react";
 import { QRCodeCanvas } from "qrcode.react"; // ✅ Use QRCodeCanvas instead of default import
 
 function QRLandingPage() {
-  const qrValue = "https://your-deployed-site.com/products"; // replace with your deployed link
+  const analyticsId = process.env.REACT_APP_API_URL;
+  const qrValue = `${analyticsId}/products`; // replace with your deployed link
 
+  console.log("analyticsId", analyticsId)
   return (
     <div style={styles.container}>
       <div style={styles.card}>
