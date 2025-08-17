@@ -2,7 +2,7 @@ import React from "react";
 import { QRCodeCanvas } from "qrcode.react"; // ✅ Use QRCodeCanvas instead of default import
 
 function QRLandingPage() {
-  const analyticsId = process.env.REACT_APP_API_URL;
+  const analyticsId = process.env.RAILWAY_PUBLIC_DOMAIN;
   const qrValue = `${analyticsId}/products`; // replace with your deployed link
 
   console.log("analyticsId", analyticsId)
