@@ -7,7 +7,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<QRLandingPage />} />
-        <Route path="/products" element={<MobileAccessoriesStore />} />
+        <Route path="/product" element={<MobileAccessoriesStore />} />
       </Routes>
     </Router>
   );
